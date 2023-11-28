@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHK Camping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body onload="setInterval(slideimg,2000);">
+    <header>
+
+    <div id="MnBar" onclick="displayNav();"><em class="fa-solid fa-bars"></em></div>
+    <nav id="jnav">
+        <a href="index.html"><em class="fa-solid fa-house"></em> home</a>
+        <a href="campingEquip.html"><em class="fa-solid fa-broom"></em> camping equipment</a>
+        <a href="furniture.html"><em class="fa-solid fa-couch"></em> furniture</a>
+        <a href="review.html"><em class="fa-solid fa-registered"></em> review</a>
+        <a href="basket.html"><em class="fa-solid fa-basket-shopping"></em> basket</a>
+        <a href="oAndP.html"><em class="fa-solid fa-handshake"></em> Offers and Packages</a>
+    </nav>
+    <div class="control" tabindex="1">
+        <div class="btn"></div>
+        <em class="icon-search ion-search"></em> 
+      </div>
+      <em class="icon-close ion-ios-close-empty"></em>
+<div class="form">
+    <label >.<input class="input-search" placeholder="Start Typing" type="text">   </label>
+</div>
+</header>
+<section>
+    <div id="backgroundslide">    </div>  
+    <div class="itemgroup">
+        <div class="item">
+            <img src="image/fur1.jpg" alt="fur1">
+            <h1>MANTIS CAMPING TABLE</h1>
+            <h2>$99.99</h2>
+            <p>Our little Mantis table is a multi-purpose, portable table that packs down small enough to fit behind the seat of the car. The low height adjustment makes it ideal for small dome tents or picnics and can be raised for use as a serving table or additional meal preparation surface. The removable storage hammock provides valuable organization and storage for camp essentials.
+            </p>
+            <button onclick="addcart(this);" class="btnOrder" >Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/fur3.jpg" alt="fur3">
+            <h1>KITPAC SPIKE CAMPING TABLE <span class="promotionColor">(20%OFF)</span></h1>
+            <h2><del>$150</del> $120</h2>
+            <p>This large folding camping table features a smooth natural bamboo tabletop. The Kitpac Large V2 folds in 4 times to fit neatly into a durable carry bag. The square-profile aluminium frame is sturdy, lightweight, and rust-resistant. Adjustable legs allow the table to be used at coffee table or dining table heights and include micro-adjust feet for levelling on uneven surfaces. If that is not enough it also features a built-in bottle opener!
+
+                You can also enhance your Kitpac Large V2 camping table with an additional table hammock, handy for storing camping essentials and keeping table space clear.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/fur2.jpg" alt="fur2">
+            <h1>HALO LOUNGER CAMPING CHAIR</h1>
+            <h2>$230</h2>
+            <p>The Halo Lounger is built for the sleepy camper. The padded surface is suspended with an elastic cord on a durable steel frame, making it both supportive and comfortable. This chair can recline to any position and then securely lock into place with the levers found under each arm. The soft pillow slides up and down to suit users of all heights or to use as lumbar support.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/fur4.jpg" alt="fur4">
+            <h1>KITPAC SPIKE CAMPING TABLE <span class="promotionColor">(20%OFF)</span></h1>
+            <h2><del>$69.99</del> $55.49</h2>
+            <p>The Kitpac Spike is a sturdy spike-mounted table for the beach or campsite. Simply drive the spike into the ground or sand & you have a convenient spot for drinks & snacks. The natural bamboo tabletop features 4x wine glass holder cut-outs & a built-in bottle opener. A 2 stage aluminium frame design allows the table to be used low for picnicking or high for convenience when used with a camp chair.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/fur5.jpg" alt="fur5">
+            <h1>ROCO LITE V2 CAMPING CHAIR <span class="promotionColor">(50%OFF)</span></h1>
+            <h2><del>$99.99</del>  $49.99</h2>
+            <P>The Roco Lite V2 is comfortable enough to relax the day away in, but still upright enough to pull up to the table for a meal. The aluminium frame minimizes carry-weight and the wood handles offer a hint of modern style. The durable 900D Polyester seat is comfortable and light and the entire chair packs away easily into a custom made carry bag.</P>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+    </div>
+</section> 
+<footer>
+    <div id="sm">
+        <a href="https://www.facebook.com"><em class="fa-brands fa-facebook-f"></em>acebook</a>
+        <a href="https://www.instagram.com"><em class="fa-brands fa-instagram"></em>Instagram</a>
+        <a href="https://www.twitter.com"><em class="fa-brands fa-twitter"></em>Twitter</a>
+        <a href="https://www.youtube.com"><em class="fa-brands fa-youtube"></em>Youtube</a>
+    </div>
+    <div id="cr">
+        <em>@2023 Aung Hein Kyaw, All Rights Reserved.</em>
+    </div>
+</footer>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
+<script>
+$('.control').click(function () {
+    $('body').addClass('mode-search');
+    $('.input-search').focus();
+});
+$('.icon-close').click(function () {
+    $('body').removeClass('mode-search');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHK Camping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body onload="setInterval(slideimg,2000);">
+    <header>
+    
+    <div id="MnBar" onclick="displayNav();"><em class="fa-solid fa-bars"></em></div>
+    <nav id="jnav">
+        <a href="index.html"><em class="fa-solid fa-house"></em> home</a>
+        <a href="campingEquip.html"><em class="fa-solid fa-broom"></em> camping equipment</a>
+        <a href="furniture.html"><em class="fa-solid fa-couch"></em> furniture</a>
+        <a href="review.html"><em class="fa-solid fa-registered"></em> review</a>
+        <a href="basket.html"><em class="fa-solid fa-basket-shopping"></em> basket</a>
+        <a href="oAndP.html"><em class="fa-solid fa-handshake"></em> Offers and Packages</a>
+    </nav>
+    <div class="control" tabindex="1">
+        <div class="btn"></div>
+        <em class="icon-search ion-search"></em> 
+      </div>
+      <em class="icon-close ion-ios-close-empty"></em>
+<div class="form">
+  <label >.<input class="input-search" placeholder="Start Typing" type="text">   </label>
+</div>
+  
+</header>
+<section>
+    <div id="backgroundslide">    </div>  
+    <div class="itemgroup">
+        <div class="item">
+            <img src="image/eq1.jpg" alt="eq1">
+            <h1>Single-size Camping Tent(white)</h1>
+            <h2>$130</h2>
+            <p> has been made with the same fabric as our Pro series tents to match seamlessly with your tent using our range of Pro Links. Just like the standard Aerobase shelters, it inflates in minutes and packs away even faster. A lightweight design, small pack size, and durable construction make it ideal for everything from day trips to extended camping vacations</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq2.jpg" alt="eq2">
+            <h1>Single-size Everest Tent(yellow)</h1>
+            <h2>$150</h2>
+            <p>Created in the late 60s, Everest is a functional 1 to 2 person cotton camping tent featuring sturdy aluminium poles. The tent has front and back entrances, both with mosquito netting for easy entry and proper air flow.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq3.jpg" alt="eq3">
+            <h1>Family-size Camping Air-tent(grey,orange)</h1>
+            <h2>$203</h2>
+            <p>We awarded the Escape high marks for its overall functionality because we were amazed at its results with just a small amount of effort. When deployed, this tent feels gargantuan, offers a ton of headroom, and has many neat features that make it very usable and livable. The most impressive feature of the Escape is that it's self-contained and ready to go right out of the box, no assembly required.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq4.jpg" alt="eq4">
+            <h1>Single-size Dreaming Tent(grey)</h1>
+            <h2>$150</h2>
+            <p>Coleman Sundome Camping Tent, 2/3/4/6 Person Dome Tent with Easy Setup, Included Rainfly and WeatherTec Floor to Block Out Water, 2 Windows and 1 Ground Vent for Air Flow with Charging E-Port Flap</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq5.jpg" alt="eq5">
+            <h1>Single-size Sunny Tent(orange)</h1>
+            <h2>$140</h2>
+            <p>Coleman Sundome Camping Tent, 2/3/4/6 Person Dome Tent with Easy Setup, Included Rainfly and WeatherTec Floor to Block Out Water, 2 Windows and 1 Ground Vent for Air Flow with Charging E-Port Flap</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq6.jpg" alt="eq6">
+            <h1>Led lenser ML4 Rechargeable</h1>
+            <h2>$30</h2>
+            <p>The ultra-compact outdoor light by Ledlenser with state of the art lens technology for glare-free light and high energy efficiency. Dual Power technology offers extended usage time thanks to AA batteries to back up the included rechargeable battery. This battery can be charged via magnetic charge system, which makes it particularly easy to attach the charging cable. Moreover the latern has a Carabiner snap hook for flexible usage and fastening.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq7.jpg" alt="eq7">
+            <h1>Gear aid 325 Paracord 15 m Rope</h1>
+            <h2>$12</h2>
+            <p>GEAR AID 325 Paracord 15 m Rope Black is a highly durable and versatile piece of camping equipment that every camper needs to have. Made with high-quality synthetic fibers, this rope is designed to endure extreme conditions without sacrificing its strength or durability. Its black color gives it a sleek look that will complement any outdoor setting.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        <div class="item">
+            <img src="image/eq8.jpg" alt="eq8">
+            <h1>Varta UV Flashlight</h1>
+            <h2>$9</h2>
+            <p>Varta UV Flashlight is available in different options and characteristics. Choose the one that fits your needs the best and receive it at home in a few days. In addition, in the online outdoor store you can find Varta UV Flashlight related products. Our selection of Camping equipment products are designed to give you complete confidence, no matter of the intensity of the workout or sport activity.</p>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </div>
+        
+    </div>
+</section> 
+<footer>
+    <div id="sm">
+        <a href="https://www.facebook.com"><em class="fa-brands fa-facebook-f"></em>acebook</a>
+        <a href="https://www.instagram.com"><em class="fa-brands fa-instagram"></em>Instagram</a>
+        <a href="https://www.twitter.com"><em class="fa-brands fa-twitter"></em>Twitter</a>
+        <a href="https://www.youtube.com"><em class="fa-brands fa-youtube"></em>Youtube</a>
+    </div>
+    <div id="cr">
+        <em>@2023 Aung Hein Kyaw, All Rights Reserved.</em>
+    </div>
+</footer>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
+<script>
+$('.control').click(function () {
+    $('body').addClass('mode-search');
+    $('.input-search').focus();
+});
+$('.icon-close').click(function () {
+    $('body').removeClass('mode-search');
+});
+</script>
+</body>
+</html>

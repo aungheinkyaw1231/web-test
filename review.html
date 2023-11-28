@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHK Camping</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js"></script>
+</head>
+<body onload="setInterval(slideimg,2000);">
+    <header>
+    <div id="backgroundslideR">    
+    <div id="MnBar" onclick="displayNav();"><em class="fa-solid fa-bars"></em></div>
+    <nav id="jnav">
+        <a href="index.html"><em class="fa-solid fa-house"></em> home</a>
+        <a href="campingEquip.html"><em class="fa-solid fa-broom"></em> camping equipment</a>
+        <a href="furniture.html"><em class="fa-solid fa-couch"></em> furniture</a>
+        <a href="review.html"><em class="fa-solid fa-registered"></em> review</a>
+        <a href="basket.html"><em class="fa-solid fa-basket-shopping"></em> basket</a>
+        <a href="oAndP.html"><em class="fa-solid fa-handshake"></em> Offers and Packages</a>
+    
+    </nav>
+    <div id="frm">
+        <form action="ac" method="post" id="register">
+            <div class="row">
+                <label for="fName">
+                    First Name
+                </label>
+                <input type="text" name="first-name" id="fName">
+            </div>
+            <div class="row">
+                <label for="lName">
+                    Last Name
+                </label>
+                <input type="text" name="last-name" id="lName">
+            </div>
+            <div class="row">
+                <label for="Email">
+                    Email Address
+                </label>
+                <input type="text" name="email" id="Email">
+            </div>
+            <div class="row">
+                <label for="review">
+                    Review
+                </label>
+                <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            </div>
+            <div class="btnrow">
+                <input type="submit" name="btnsubmit" value="Submit">
+                <label >'<input type="reset" name="btnclear" id="Clear"></label>
+            </div>
+    
+        </form>
+    </div>
+</div>  
+</header>
+<section >
+    <div id="reviews">
+    <div class="rev">
+        <h4>Khin Khin</h4> 
+        <em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-regular fa-star"></em>
+        <h5>Email - khinkhin@gmail.com</h5>
+        <p>We got in on a cancelation. Yes it is possible. There is so much to do in this area. Its a large great layed out State Park. Some evenings during the summer there is music concerts at the Rock cliffs. We saw "Salty Sailors" on a Saturday night, it was fantastic! I really enjoyed biking on the many paved roads and trails.</p>    
+    </div>
+    <div class="rev">
+        <h4>Aye Chan</h4> 
+        <em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em>
+        <h5>Email - ayechan1@gmail.com</h5>
+        <p>Great for backyard overnights, this simple dome-style tent is for anyone who doesn't want to spend more than $150 on a tent but also doesn't want to buy another one next year. It has a partial rain fly, but only one door and no vestibule</p>
+    </div>
+    <div class="rev">
+        <h4>Stephan Jogh</h4> 
+        <em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-regular fa-star"></em>
+        <h5>Email - s.jogh@gmail.com</h5>
+        <p>This dome-style tent has nearly vertical walls, high ceilings, and a single vestibule the size of an actual mudroom. It’s also straightforward to set up, and it is made with sturdy, light materials. It’s expensive, but you get value for your money.</p>
+    </div>
+    <div class="rev">
+        <h4>Kopete Dom</h4> 
+        <em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-solid fa-star"></em><em class="fa-regular fa-star"></em><em class="fa-regular fa-star"></em>
+        <h5>Email - dom.k@gmail.com</h5>
+        <p>A full rain cover, two vestibules, and an extra-sturdy pole structure make this the best choice for couples who want to get outside in any weather. It’s pricey, though, and unless the other couples’ tents we recommend, it doesn’t include a footprint</p>
+    </div>
+</div>
+<div id="faqh2">
+    <h2>Frequently Asked Question (FAQ)</h2>
+</div>
+<div id="faq" >
+    <div class="faqtxt">
+    <h3>Which season is best for camping?</h3>
+    <p>-That all depends on what you want. The summer will always be the most popular camping season, when you can soak up the rays and swim around the clock, but more and more people are discovering the charms of the great outdoors in the spring and autumn (and even the winter). Off-season is probably the best time for those who want peace and quiet, with the coast to yourself. Many people believe that seafood is at is best in the winter half of the year, since the sea is at its healthiest then. </p>
+    </div>
+    <div class="faqtxt">
+        <h3>How do I know whether camping would suit me?</h3>
+        <p>Hmm, this is a very subjective question. Not everyone feels comfortable about sleeping in a tent or in a caravan, sardine-style. But staying in a cabin is like living in a small house, and most can manage that without any problems. So we’re going to stick our neck out and say that everyone should try camping at least once! </p>
+    </div>
+    <div class="faqtxt">
+        <h3>Can you buy food?</h3>
+        <p>Yes, most campsites now have a restaurant, café and a shop. You can also cook meals in one of the service buildings, or in your cabin if you have booked one.</p>
+    </div>
+        <div class="faqtxt">
+        <h3>If I arrive after the reception has closed, what should I do?</h3>
+        <p>If you have booked your cabin or camping pitch in advance, the camping staff will always ensure that you have access to your place even if you arrive after reception hours. Feel free to contact reception so that they know when you will arrive. </p>
+    </div>
+    <div class="faqtxt">
+        <h3>Will the cabin be warm when I arrive? </h3>
+        <p>Definitely! If you have booked in advance the camping staff will ensure that the cabin is heated when you arrive. </p>
+    </div>
+    
+
+</div>
+
+</section>
+
+<footer>
+    <div id="sm">
+        <a href="https://www.facebook.com"><em class="fa-brands fa-facebook-f"></em>acebook</a>
+        <a href="https://www.instagram.com"><em class="fa-brands fa-instagram"></em>Instagram</a>
+        <a href="https://www.twitter.com"><em class="fa-brands fa-twitter"></em>Twitter</a>
+        <a href="https://www.youtube.com"><em class="fa-brands fa-youtube"></em>Youtube</a>
+    </div>
+    <div id="cr">
+        <em>@2023 Aung Hein Kyaw, All Rights Reserved.</em>
+    </div>
+</footer>
+</body>
+</html>

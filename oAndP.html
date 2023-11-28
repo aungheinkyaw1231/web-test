@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHK Camping</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
+    
+
+</head>
+<body onload="setInterval(slideimg,2000);">
+    <header>
+       
+    <div id="MnBar" onclick="displayNav();"><em class="fa-solid fa-bars"></em></div>
+    <nav id="jnav">
+        <a href="index.html"><em class="fa-solid fa-house"></em> home</a>
+        <a href="campingEquip.html"><em class="fa-solid fa-broom"></em> camping equipment</a>
+        <a href="furniture.html"><em class="fa-solid fa-couch"></em> furniture</a>
+        <a href="review.html"><em class="fa-solid fa-registered"></em> review</a>
+        <a href="basket.html"><em class="fa-solid fa-basket-shopping"></em> basket</a>
+        <a href="oAndP.html"><em class="fa-solid fa-handshake"></em> Offers and Packages</a>
+    </nav>
+    
+</header>
+<section id="home">
+    <div id="backgroundslideR"> </div>   
+    <div class="mainContainer">
+    <ul class="riot-slider">
+        <li><img src="image/fur1.jpg" alt="fur1" /> 
+            <h1>KITPAC SPIKE CAMPING TABLE <span class="promotionColor">(20%OFF)</span></h1>
+            <h2><del>$150</del> $120</h2> 
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button></li>
+        <li><img src="image/fur5.jpg" alt="fur4" />
+            <h1>ROCO LITE V2 CAMPING CHAIR <span class="promotionColor">(50%OFF)</span></h1>
+            <h2><del>$99.99</del>  $49.99</h2>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </li>
+        
+        <li><img src="image/fur4.jpg" alt="fur4" />
+            <h1>KITPAC SPIKE CAMPING TABLE <span class="promotionColor">(20%OFF)</span></h1>
+            <h2><del>$69.99</del> $55.49</h2>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </li>
+        <li><img src="image/eq3.jpg" alt="eq3" />
+            <h1>Family-size Camping Air-tent(grey,orange)</h1>
+            <h2>$203</h2>
+            <button onclick="addcart(this);" class="btnOrder">Order Now!</button>
+        </li>
+
+    </ul>
+    </div>
+    <script src="riot-slider.min.js"></script>
+</section> 
+<footer>
+
+    
+    <div id="sm">
+        <a href="https://www.facebook.com"><em class="fa-brands fa-facebook-f"></em>acebook</a>
+        <a href="https://www.instagram.com"><em class="fa-brands fa-instagram"></em>Instagram</a>
+        <a href="https://www.twitter.com"><em class="fa-brands fa-twitter"></em>Twitter</a>
+        <a href="https://www.youtube.com"><em class="fa-brands fa-youtube"></em>Youtube</a>
+    </div>
+    <div id="cr">
+        <em>@2023 Aung Hein Kyaw, All Rights Reserved.</em>
+    </div>
+</footer>
+</body>
+</html>
